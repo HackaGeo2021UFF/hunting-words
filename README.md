@@ -74,7 +74,7 @@ git pull origin main            # baixando tudo da branch master/main do GitHub
 Depois que você escrever o seu código:
 ```bash
 git add.                        # adicionando todas mudanças na pasta
-git commit -m "sua descrição"   # commitando
+git commit -m "HACKAGEO-X #done"   # commitando
 git push origin seuNome         # enviando a sua branch para o GitHub
 ```
 
