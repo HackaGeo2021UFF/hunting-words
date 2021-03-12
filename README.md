@@ -39,6 +39,18 @@ Onde X é a palavra procurada.
 * Um programa para testar a função construída utilizando datasets da pasta "data".
 * Um programa que gera casos de teste.
 
+Tarefa | Arquivo | Membro
+--------- | ------ | ------
+Desenvolver a função de validação | /solution/auxiliary_functions | Pedro
+Desenvolver funções auxiliares | /solution/auxiliary_functions | Paulo
+Desenvolver a função desafio | /solution/\_\_init\_\_.py | Fábio
+Desenvolver o programa de teste | test.py | Miquelutti
+Criar N casos de teste | create_data.py | Bárbara
+
+Linguagem: Python
+
+Única regra: não utilizar bibliotecas que não são nativas.
+
 ### Arquivos no repositório
 
 ```bash
