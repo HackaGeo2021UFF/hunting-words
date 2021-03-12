@@ -1,4 +1,4 @@
-from auxiliary_functions import validation
+from solution.auxiliary_functions import validation
 
 def challenge(words, matrix):
     '''
