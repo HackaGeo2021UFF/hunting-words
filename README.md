@@ -75,6 +75,8 @@ Linguagem: Python
 
 ### Git
 
+Caso ainda **não tenha usado o Git nenhuma vez**, a página [Git](https://geofisica-uff.atlassian.net/wiki/spaces/HA/pages/978550785/Git) do Confluence é um bom começo.
+
 Assumindo que você já possui o Git baixado, instalado e configurado. Siga os passos:
 ```bash
 git init                        # iniciando repositório
