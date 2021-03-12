@@ -78,7 +78,7 @@ Linguagem: Python
 Assumindo que você já possui o Git baixado, instalado e configurado. Siga os passos:
 ```bash
 git init                        # iniciando repositório
-git remote add origin           # conectando com o github
+git remote add origin <link>    # conectando com o github
 git checkout -b seuNome         # criando uma branch com o seu nome
 git pull origin main            # baixando tudo da branch master/main do GitHub
 ```
