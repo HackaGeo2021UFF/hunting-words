@@ -43,7 +43,7 @@ Tarefa | Arquivo | Membro
 --------- | ------ | ------
 Desenvolver a função de validação | /solution/auxiliary_functions | Pedro
 Desenvolver funções auxiliares | /solution/auxiliary_functions | Paulo
-Desenvolver a função desafio | /solution/\_\_init\_\_.py | Fábio
+Desenvolver a função desafio | /solution/challenge.py | Fábio
 Desenvolver o programa de teste | test.py | Miquelutti
 Criar N casos de teste | create_data.py | Bárbara
 
