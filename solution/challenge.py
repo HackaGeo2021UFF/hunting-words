@@ -1,4 +1,5 @@
-from solution.auxiliary_functions import validation
+from solution.auxiliary_functions import *
+
 
 def challenge(words, matrix):
     '''
@@ -14,4 +15,10 @@ def challenge(words, matrix):
     Return
         result: dic {Key: word (str), Value: resposta (int)}
     '''
-    return {}
+
+
+    positions, _, foundWords = solver(matrix, words)
+
+    dic = {foundWords[i]: positions[i] for i in range(len(positions))}
+
+    return dic
