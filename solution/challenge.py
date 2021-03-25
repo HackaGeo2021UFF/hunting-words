@@ -19,6 +19,12 @@ def challenge(words, matrix):
 
     positions, _, foundWords = solver(matrix, words)
 
+    x = list(set(words).difference(foundWords))
+
     dic = {foundWords[i]: positions[i] for i in range(len(positions))}
+
+    if len(x) > 0:
+        for j in x:
+            dic.update({j : 4})
 
     return dic
