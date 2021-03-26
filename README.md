@@ -46,6 +46,7 @@ Desenvolver funções auxiliares | /solution/auxiliary_functions | Paulo
 Desenvolver a função desafio | /solution/challenge.py | Fábio
 Desenvolver o programa de teste | test.py | Miquelutti
 Criar N casos de teste | create_data.py | Bárbara
+Gerenciar o repositório (revisar commits e PRs) | ------ | Gustavo
 
 Linguagem: Python
 
