@@ -110,16 +110,15 @@ def solver(matrix,words):
                 letters += matrix[int(diag/2 - k + i)][int(i)]
 
             for word in words:
-                if len(word) <= len(letters):
-                    if word in letters:
-                        directions.append("Top-Bottom")
-                        positions.append(3)
-                        foundWords.append(word)
+                if word.lower() in letters.lower():
+                    directions.append("Top-Bottom")
+                    positions.append(3)
+                    foundWords.append(word)
 
-                    elif word[::-1] in letters:
-                        directions.append("Bottom-Top")            
-                        positions.append(3)
-                        foundWords.append(word)
+                elif word[::-1].lower() in letters.lower():
+                    directions.append("Bottom-Top")            
+                    positions.append(3)
+                    foundWords.append(word)
 
         if k == diag/2: # na diagonal principal = 1
             letters = ''
@@ -127,16 +126,15 @@ def solver(matrix,words):
                 letters += matrix[int(i)][int(i)]
 
             for word in words:
-                if len(word) <= len(letters):
-                    if word in letters:
-                        directions.append("Top-Bottom")
-                        positions.append(1)
-                        foundWords.append(word)
+                if word.lower() in letters.lower():
+                    directions.append("Top-Bottom")
+                    positions.append(1)
+                    foundWords.append(word)
 
-                    elif word[::-1] in letters:
-                        directions.append("Bottom-Top")
-                        positions.append(1)
-                        foundWords.append(word)
+                elif word[::-1].lower() in letters.lower():
+                    directions.append("Bottom-Top")
+                    positions.append(1)
+                    foundWords.append(word)
 
         if k > diag/2: # acima da diagonal principal = 2
             letters = ''
@@ -144,15 +142,14 @@ def solver(matrix,words):
                 letters += matrix[int(i)][int(k - diag/2 + i)]
 
             for word in words:
-                if len(word) <= len(letters):
-                    if word in letters:
-                        directions.append("Top-Bottom")
-                        positions.append(2)
-                        foundWords.append(word)
+                if word.lower() in letters.lower():
+                    directions.append("Top-Bottom")
+                    positions.append(2)
+                    foundWords.append(word)
 
-                    elif word[::-1] in letters:
-                        directions.append("Bottom-Top")            
-                        positions.append(2)
-                        foundWords.append(word)
+                elif word[::-1].lower() in letters.lower():
+                    directions.append("Bottom-Top")            
+                    positions.append(2)
+                    foundWords.append(word)
 
     return positions, directions, foundWords
