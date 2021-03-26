@@ -2,16 +2,25 @@ import string
 import random
 
 def validation(words, matrix):
-    '''
-    Description
-        Validation
+     
+    '''        Validation
     Arguments
-        words: list
-        matrix: matriz
+        words: list of names used on the crossword
+        matrix: shape of the matrix, only
     Return
         result: tuple (status: bool, msg: string)
     '''
-    return True, ""
+    
+    if len(words) > matrix:
+        return False, print('Matrix too small')
+        
+    for n in range(len(words)):
+        if len(words[n]) > matrix:
+            return False, print('Matrix too short')
+        
+    else:
+        return True,  print ('The Matrix is OK')
+ 
 
 def randomMatrixGeneration(n,words):
     """
